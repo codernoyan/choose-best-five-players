@@ -42,6 +42,12 @@ function selectPlayer(element) {
 // Players budget calculation
 document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayerCost = getInputValueById('per-player-cost');
+    
+    if (perPlayerCost < 0 || isNaN(perPlayerCost)) {
+        alert('Invalid input value');
+        return;
+    }
+
     const totalPlayerExpenses = perPlayerCost * 5;
     setTextElementValueById('player-expenses', totalPlayerExpenses);
 })
@@ -49,7 +55,18 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
 document.getElementById('btn-total-calculate').addEventListener('click', function () {
     const playerExpenses = getTextElementValueById('player-expenses');
     const managerCostAmount = getInputValueById('manager-cost-amount');
+
+    if (managerCostAmount < 0 || isNaN(managerCostAmount)) {
+        alert('Invalid input value');
+        return;
+    }
+
     const coachCostAmount = getInputValueById('coach-cost-amount');
+
+    if (coachCostAmount < 0 || isNaN(coachCostAmount)) {
+        alert('Invalid input value');
+        return;
+    }
 
     const finalTotalAmount = playerExpenses + managerCostAmount + coachCostAmount;
     setTextElementValueById('final-total', finalTotalAmount);
