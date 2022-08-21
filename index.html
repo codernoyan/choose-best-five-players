@@ -33,7 +33,7 @@
     <header class="bg-black text-white">
         <div class="container mx-auto h-96 flex justify-center items-center">
             <div>
-                <h1 class="text-center text-5xl font-bold font-lobsterTwo text-orange-400 mb-7">Choose Your Favorite
+                <h1 class="text-center text-7xl font-bold font-lobsterTwo text-orange-400 mb-7">Choose Your Favorite
                     Players</h1>
                 <div class="flex justify-center">
                     <p class="w-1/2 text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -49,7 +49,7 @@
             <div class="grid grid-cols-4 gap-4">
                 <div class="grid grid-cols-3 gap-4 col-span-3">
                     <!-- card-1 -->
-                    <div class="card">
+                    <div class="card border-2">
                         <div class="image">
                             <img class="w-full h-60 object-cover object-top" src="images/Lionel-messi.jpg" alt="">
                         </div>
@@ -60,11 +60,11 @@
                                 <p>.</p>
                                 <p>120 Assist</p>
                             </div>
-                            <button class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
+                            <button onclick="selectPlayer(this)" class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
                         </div>
                     </div>
                     <!-- card-2 -->
-                    <div class="card">
+                    <div class="card border-2">
                         <div class="image">
                             <img class="w-full h-60 object-cover object-top" src="images/Neymar.jpg" alt="">
                         </div>
@@ -75,11 +75,11 @@
                                 <p>.</p>
                                 <p>120 Assist</p>
                             </div>
-                            <button class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
+                            <button onclick="selectPlayer(this)" class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
                         </div>
                     </div>
                     <!-- card-3 -->
-                    <div class="card">
+                    <div class="card border-2">
                         <div class="image">
                             <img class="w-full h-60 object-cover object-top" src="images/christiano-ronaldo.jpg" alt="">
                         </div>
@@ -90,11 +90,11 @@
                                 <p>.</p>
                                 <p>120 Assist</p>
                             </div>
-                            <button class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
+                            <button onclick="selectPlayer(this)" class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
                         </div>
                     </div>
                     <!-- card-4 -->
-                    <div class="card">
+                    <div class="card border-2">
                         <div class="image">
                             <img class="w-full h-60 object-cover object-top" src="images/Dmaria.jpg" alt="">
                         </div>
@@ -105,11 +105,11 @@
                                 <p>.</p>
                                 <p>120 Assist</p>
                             </div>
-                            <button class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
+                            <button onclick="selectPlayer(this)" class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
                         </div>
                     </div>
                     <!-- card-5 -->
-                    <div class="card">
+                    <div class="card border-2">
                         <div class="image">
                             <img class="w-full h-60 object-cover object-top" src="images/harry-wilson.jpg" alt="">
                         </div>
@@ -120,11 +120,11 @@
                                 <p>.</p>
                                 <p>120 Assist</p>
                             </div>
-                            <button class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
+                            <button onclick="selectPlayer(this)" class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
                         </div>
                     </div>
                     <!-- card-6 -->
-                    <div class="card">
+                    <div class="card border-2">
                         <div class="image">
                             <img class="w-full h-60 object-cover object-top" src="images/Kylian Mbappé.jpg" alt="">
                         </div>
@@ -135,11 +135,11 @@
                                 <p>.</p>
                                 <p>120 Assist</p>
                             </div>
-                            <button class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
+                            <button onclick="selectPlayer(this)" class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
                         </div>
                     </div>
                     <!-- card-7 -->
-                    <div class="card">
+                    <div class="card border-2">
                         <div class="image">
                             <img class="w-full h-60 object-cover object-top" src="images/Mohamed-Salah.jpeg" alt="">
                         </div>
@@ -150,11 +150,11 @@
                                 <p>.</p>
                                 <p>120 Assist</p>
                             </div>
-                            <button class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
+                            <button onclick="selectPlayer(this)" class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
                         </div>
                     </div>
                     <!-- card-8 -->
-                    <div class="card">
+                    <div class="card border-2">
                         <div class="image">
                             <img class="w-full h-60 object-cover object-top" src="images/Paolo Dybala.jpg" alt="">
                         </div>
@@ -165,11 +165,11 @@
                                 <p>.</p>
                                 <p>120 Assist</p>
                             </div>
-                            <button class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
+                            <button onclick="selectPlayer(this)" class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
                         </div>
                     </div>
                     <!-- card-9 -->
-                    <div class="card">
+                    <div class="card border-2">
                         <div class="image">
                             <img class="w-full h-60 object-cover object-top" src="images/Sergio Ramos.jpg" alt="">
                         </div>
@@ -180,17 +180,19 @@
                                 <p>.</p>
                                 <p>120 Assist</p>
                             </div>
-                            <button class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
+                            <button onclick="selectPlayer(this)" class="py-2 bg-sky-600 font-semibold text-xl">SELECT</button>
                         </div>
                     </div>
                 </div>
                 <!-- second section -->
                 <div class="flex flex-col gap-4">
                     <div class="h-96 text-center bg-black text-white p-6">
-                        <h2 class="text-2xl font-semibold py-4">Selected - V</h2>
-                        <ul id="players-list">
-                            
-                        </ul>
+                        <h2 class="text-2xl font-semibold py-8">Selected - V</h2>
+                        <table class="text-left">
+                            <tbody id="players-list">
+
+                            </tbody>
+                        </table>
                     </div>
                     <div class="text-center bg-black text-white p-6">
                         <h2 class="text-2xl font-semibold py-4">Budget</h2>
@@ -227,6 +229,8 @@
             </div>
         </section>
     </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
