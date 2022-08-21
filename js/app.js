@@ -11,9 +11,9 @@ function display(playerName) {
 
         // li.innerText = `${i + 1} ${name}`;
         tr.innerHTML = `
-            <td class="text-xl pr-4">${i + 1}</td>
+            <td class="text-xl font-semibold pr-4">${i + 1}</td>
             <td class="text-xl">${name}</td>
-        `;       
+        `;
 
         playersList.appendChild(tr);
     }
@@ -27,10 +27,15 @@ function selectPlayer(element) {
         name: playerName
     }
     playersArray.push(playerObj);
-
-    display(playersArray);
     
+    if (playersArray.length > 5) {
+        alert('You cannot add more than 5 player.');
+        element.setAttribute('disabled', true);
+        return;
+    }
+    display(playersArray);
+
     element.setAttribute('disabled', true);
     element.classList.add('bg-gray-400');
-    console.log(element);
+    console.log(playersArray);
 }
