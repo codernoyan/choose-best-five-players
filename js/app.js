@@ -6,14 +6,15 @@ function display(playerName) {
     playersList.innerHTML = '';
     for (let i = 0; i < playerName.length; i++){
         const name = playerName[i].name;
-        const tr = document.createElement('tr');
-
-        tr.innerHTML = `
-            <td class="text-xl font-semibold pr-4">${i + 1}</td>
-            <td class="text-xl">${name}</td>
+        const li = document.createElement('li');
+        
+        li.innerHTML = `
+            <span class="text-xl font-semibold pr-4 text-slate-300">${i + 1}.</span>
+            <span class="text-xl text-slate-200">${name}</span>
         `;
+        li.classList.add('py-2')
 
-        playersList.appendChild(tr);
+        playersList.appendChild(li);
     }
     
 }
