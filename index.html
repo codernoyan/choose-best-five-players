@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select Five Assignment-5</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+    <!-- tailwind css cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        lobsterTwo: ["Lobster Two", "cursive"],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <header class="bg-black text-white">
+        <div class="container mx-auto h-96 flex justify-center items-center">
+            <div>
+                <h1 class="text-center text-5xl font-bold font-lobsterTwo text-orange-400 mb-7">Choose Your Favorite Players</h1>
+                <div class="flex justify-center">
+                    <p class="w-1/2 text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                        sint. Velit officia consequat
+                        duis
+                        enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
+
 </html>
