@@ -1,5 +1,4 @@
 // select button onclick function
-
 const playersArray = [];
 
 function display(playerName) {
@@ -9,7 +8,6 @@ function display(playerName) {
         const name = playerName[i].name;
         const tr = document.createElement('tr');
 
-        // li.innerText = `${i + 1} ${name}`;
         tr.innerHTML = `
             <td class="text-xl font-semibold pr-4">${i + 1}</td>
             <td class="text-xl">${name}</td>
