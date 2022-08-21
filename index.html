@@ -199,13 +199,14 @@
                         <div class="flex justify-end my-4">
                             <div class="flex justify-end gap-4 items-center">
                                 <p class="text-lg">Per Player</p>
-                                <input class="p-2 w-32 bg-transparent border-2" type="number" value="1000" id="">
+                                <input id="per-player-cost" class="p-2 w-32 bg-transparent border-2" type="number" value="1000" id="">
                             </div>
                         </div>
-                        <button class="bg-sky-600 w-full py-2 text-xl">Calculate</button>
+                        <button id="btn-calculate" class="bg-sky-600 w-full py-2 text-xl">Calculate</button>
+
                         <div class="flex justify-between my-2">
                             <h4 class="text-lg font-medium">Player Expenses</h4>
-                            <h4 class="text-lg font-medium">$5000</h4>
+                            <h4 class="text-lg font-medium">$<span id="player-expenses">5000</span></h4>
                         </div>
                         <div class="flex justify-end my-4">
                             <div class="flex justify-end gap-4 items-center">
@@ -219,7 +220,7 @@
                                 <input class="p-2 w-32 bg-transparent border-2" type="number" value="4000" id="">
                             </div>
                         </div>
-                        <button class="bg-sky-600 w-full py-2 text-xl">Calculate Total</button>
+                        <button id="btn-total-calculate" class="bg-sky-600 w-full py-2 text-xl">Calculate Total</button>
                         <div class="flex justify-between mt-2 pb-8">
                             <h4 class="text-lg font-medium">Total</h4>
                             <h4 class="text-lg font-medium text-orange-400">$11000</h4>

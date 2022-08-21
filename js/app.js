@@ -37,3 +37,15 @@ function selectPlayer(element) {
     element.classList.add('bg-gray-400');
     console.log(playersArray);
 }
+
+// Players budget calculation
+document.getElementById('btn-calculate').addEventListener('click', function () {
+    const perPlayerCost = getInputValueById('per-player-cost');
+    const totalPlayerExpenses = perPlayerCost * 5;
+    setTextElementValueById('player-expenses', totalPlayerExpenses);
+})
+
+document.getElementById('btn-total-calculate').addEventListener('click', function () {
+    const playerExpenses = getTextElementValueById('player-expenses');
+    console.log(playerExpenses);
+})
