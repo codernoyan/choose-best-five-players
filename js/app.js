@@ -1,6 +1,7 @@
-// select button onclick function
+// adding player name to array as an object
 const playersArray = [];
 
+// display player names
 function display(playerName) {
     const playersList = document.getElementById('players-list');
     playersList.innerHTML = '';
@@ -18,7 +19,8 @@ function display(playerName) {
     }
     
 }
-    
+
+// select button onclick function
 function selectPlayer(element) {
     const playerName = element.parentNode.children[0].innerText;
     
@@ -39,7 +41,7 @@ function selectPlayer(element) {
     console.log(playersArray);
 }
 
-// Players budget calculation
+// Players budget calculation of per player
 document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayerCost = getInputValueById('per-player-cost');
     
@@ -52,10 +54,12 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     setTextElementValueById('player-expenses', totalPlayerExpenses);
 })
 
+// Players budget calculate total
 document.getElementById('btn-total-calculate').addEventListener('click', function () {
     const playerExpenses = getTextElementValueById('player-expenses');
     const managerCostAmount = getInputValueById('manager-cost-amount');
 
+    // check validation
     if (managerCostAmount < 0 || isNaN(managerCostAmount)) {
         alert('Invalid input value');
         return;
@@ -63,11 +67,13 @@ document.getElementById('btn-total-calculate').addEventListener('click', functio
 
     const coachCostAmount = getInputValueById('coach-cost-amount');
 
+    // check validation
     if (coachCostAmount < 0 || isNaN(coachCostAmount)) {
         alert('Invalid input value');
         return;
     }
 
+    // calculate final total amount
     const finalTotalAmount = playerExpenses + managerCostAmount + coachCostAmount;
     setTextElementValueById('final-total', finalTotalAmount);
 })
