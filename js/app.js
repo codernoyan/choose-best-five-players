@@ -38,7 +38,6 @@ function selectPlayer(element) {
 
     element.setAttribute('disabled', true);
     element.classList.add('bg-gray-400');
-    console.log(playersArray);
 }
 
 // Players budget calculation of per player
